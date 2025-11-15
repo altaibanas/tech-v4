@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إبداعاتنا - تِك نوفا</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 to-purple-900 text-white font-almari">
+    <!-- شريط التنقل الفاخر -->
+    <nav class="glass fixed w-full z-50 py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2 space-x-reverse">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                    <i class="fas fa-crown text-white"></i>
+                </div>
+                <a href="index.html" class="text-2xl font-bold gradient-text">تِك نوفا</a>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 space-x-reverse">
+                <a href="index.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    الرئيسية
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="about.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    عن نوفا
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="services.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    الخدمات الفاخرة
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="portfolio.html" class="text-purple-300 font-medium relative group">
+                    إبداعاتنا
+                    <span class="absolute bottom-0 right-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500"></span>
+                </a>
+                <a href="contact.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    تواصل معنا
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all hover:scale-105">
+                    طلب خدمة فاخرة
+                </button>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div id="mobile-menu" class="md:hidden glass mt-4 py-4 px-4 rounded-xl hidden">
+            <a href="index.html" class="block py-3 text-white border-b border-gray-700">الرئيسية</a>
+            <a href="about.html" class="block py-3 text-white border-b border-gray-700">عن نوفا</a>
+            <a href="services.html" class="block py-3 text-white border-b border-gray-700">الخدمات الفاخرة</a>
+            <a href="portfolio.html" class="block py-3 text-purple-300 border-b border-gray-700">إبداعاتنا</a>
+            <a href="contact.html" class="block py-3 text-white">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <!-- قسم الهيدر -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <div class="absolute inset-0 grid-pattern"></div>
+        <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500 rounded-full filter blur-3xl opacity-10"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl opacity-10"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block glass px-4 py-2 rounded-full mb-6">
+                    <span class="text-sm font-medium text-purple-300">إبداعات حصرية</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 text-shadow">
+                    <span class="gradient-text">إبداعاتنا</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    استعرض مجموعة من أبرز المشاريع التي أنجزناها لعملائنا المميزين. كل مشروع يمثل قصة نجاح وتفرد نفتخر بها.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-medium hover:shadow-lg transition-all">
+                        جميع المشاريع
+                    </button>
+                    <button class="glass text-white border border-purple-500 px-6 py-3 rounded-xl font-medium hover:bg-purple-900 transition-all">
+                        مشاريع السحابة
+                    </button>
+                    <button class="glass text-white border border-blue-500 px-6 py-3 rounded-xl font-medium hover:bg-blue-900 transition-all">
+                        مشاريع الأمن
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- مشروع 1 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift group">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden h-full">
+                        <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-500 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                            <div class="absolute top-4 left-4 z-20">
+                                <span class="bg-white text-purple-600 px-3 py-1 rounded-full text-sm font-bold">سحابة</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 z-20">
+                                <span class="bg-white/20 backdrop-blur-lg text-white px-3 py-1 rounded-full text-sm">2023</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">نظام إدارة سحابي لمجموعة فنادق فاخرة</h3>
+                            <p class="text-gray-400 mb-4">تصميم وتنفيذ نظام سحابي متكامل لإدارة مجموعة فنادق فاخرة في منطقة الخليج.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-calendar-alt ml-2"></i>
+                                    <span>6 أشهر</span>
+                                </div>
+                                <a href="#" class="text-purple-400 font-medium flex items-center group-hover:underline">
+                                    <span>عرض التفاصيل</span>
+                                    <i class="fas fa-arrow-left mr-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مشروع 2 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift group">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden h-full">
+                        <div class="h-48 bg-gradient-to-r from-blue-500 to-teal-500 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                            <div class="absolute top-4 left-4 z-20">
+                                <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-bold">أمن</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 z-20">
+                                <span class="bg-white/20 backdrop-blur-lg text-white px-3 py-1 rounded-full text-sm">2023</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">نظام أمن سيبراني لمؤسسة مالية</h3>
+                            <p class="text-gray-400 mb-4">تطوير وتنفيذ نظام أمن سيبراني متقدم لحماية بيانات مؤسسة مالية رائدة.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-calendar-alt ml-2"></i>
+                                    <span>4 أشهر</span>
+                                </div>
+                                <a href="#" class="text-blue-400 font-medium flex items-center group-hover:underline">
+                                    <span>عرض التفاصيل</span>
+                                    <i class="fas fa-arrow-left mr-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مشروع 3 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift group">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden h-full">
+                        <div class="h-48 bg-gradient-to-r from-green-500 to-emerald-500 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                            <div class="absolute top-4 left-4 z-20">
+                                <span class="bg-white text-green-600 px-3 py-1 rounded-full text-sm font-bold">ذكاء اصطناعي</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 z-20">
+                                <span class="bg-white/20 backdrop-blur-lg text-white px-3 py-1 rounded-full text-sm">2023</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">منصة ذكاء اصطناعي لتحليل البيانات</h3>
+                            <p class="text-gray-400 mb-4">بناء منصة متقدمة للذكاء الاصطناعي لتحليل بيانات العملاء لشركة تسويق.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-calendar-alt ml-2"></i>
+                                    <span>5 أشهر</span>
+                                </div>
+                                <a href="#" class="text-green-400 font-medium flex items-center group-hover:underline">
+                                    <span>عرض التفاصيل</span>
+                                    <i class="fas fa-arrow-left mr-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مشروع 4 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift group">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden h-full">
+                        <div class="h-48 bg-gradient-to-r from-yellow-500 to-orange-500 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                            <div class="absolute top-4 left-4 z-20">
+                                <span class="bg-white text-yellow-600 px-3 py-1 rounded-full text-sm font-bold">بنية تحتية</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 z-20">
+                                <span class="bg-white/20 backdrop-blur-lg text-white px-3 py-1 rounded-full text-sm">2022</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">تحديث البنية التحتية لشركة اتصالات</h3>
+                            <p class="text-gray-400 mb-4">تحديث وتطوير البنية التحتية التقنية لشركة اتصالات رائدة في المنطقة.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-calendar-alt ml-2"></i>
+                                    <span>8 أشهر</span>
+                                </div>
+                                <a href="#" class="text-yellow-400 font-medium flex items-center group-hover:underline">
+                                    <span>عرض التفاصيل</span>
+                                    <i class="fas fa-arrow-left mr-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مشروع 5 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift group">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden h-full">
+                        <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-500 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                            <div class="absolute top-4 left-4 z-20">
+                                <span class="bg-white text-indigo-600 px-3 py-1 rounded-full text-sm font-bold">سحابة</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 z-20">
+                                <span class="bg-white/20 backdrop-blur-lg text-white px-3 py-1 rounded-full text-sm">2022</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">هجرة أنظمة المؤسسة إلى السحابة</h3>
+                            <p class="text-gray-400 mb-4">هجرة كاملة لأنظمة مؤسسة تعليمية إلى بيئة سحابية متكاملة وآمنة.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-calendar-alt ml-2"></i>
+                                    <span>7 أشهر</span>
+                                </div>
+                                <a href="#" class="text-indigo-400 font-medium flex items-center group-hover:underline">
+                                    <span>عرض التفاصيل</span>
+                                    <i class="fas fa-arrow-left mr-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مشروع 6 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift group">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden h-full">
+                        <div class="h-48 bg-gradient-to-r from-pink-500 to-red-500 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                            <div class="absolute top-4 left-4 z-20">
+                                <span class="bg-white text-pink-600 px-3 py-1 rounded-full text-sm font-bold">أمن</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 z-20">
+                                <span class="bg-white/20 backdrop-blur-lg text-white px-3 py-1 rounded-full text-sm">2022</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">نظام اكتشاف ومنع الاختراقات</h3>
+                            <p class="text-gray-400 mb-4">تطوير نظام متقدم لاكتشاف ومنع الاختراقات الأمنية لشركة تقنية.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-calendar-alt ml-2"></i>
+                                    <span>5 أشهر</span>
+                                </div>
+                                <a href="#" class="text-pink-400 font-medium flex items-center group-hover:underline">
+                                    <span>عرض التفاصيل</span>
+                                    <i class="fas fa-arrow-left mr-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- زر تحميل المزيد -->
+            <div class="text-center mt-12">
+                <button class="glass text-white border border-purple-500 px-8 py-4 rounded-xl font-bold hover:bg-purple-900 transition-all">
+                    تحميل المزيد من المشاريع
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-pink-900/20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-6">أرقام نفتخر بها</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">إنجازاتنا تتحدث عن جودة العمل والثقة التي حصلنا عليها من عملائنا</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-bold gradient-text mb-4">50+</div>
+                    <div class="text-xl font-bold text-white mb-2">مشروع نخبوي</div>
+                    <p class="text-gray-400">أنجزنا أكثر من 50 مشروعًا حصريًا لعملاء مميزين</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-5xl font-bold gradient-text mb-4">100%</div>
+                    <div class="text-xl font-bold text-white mb-2">رضا عملاء</div>
+                    <p class="text-gray-400">جميع عملائنا عبروا عن رضاهم التام عن خدماتنا</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-5xl font-bold gradient-text mb-4">24/7</div>
+                    <div class="text-xl font-bold text-white mb-2">دعم فاخر</div>
+                    <p class="text-gray-400">دعم فني متاح على مدار الساعة بجودة استثنائية</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-5xl font-bold gradient-text mb-4">5+</div>
+                    <div class="text-xl font-bold text-white mb-2">سنوات تميز</div>
+                    <p class="text-gray-400">أكثر من 5 سنوات من تقديم الحلول التقنية الفاخرة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم العملاء -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-6">عملاؤنا النخبة</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">نفتخر بشراكتنا مع أرقى العلامات التجارية والمؤسسات التي تبحث عن التميز</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-70">
+                <div class="glass p-6 rounded-2xl flex items-center justify-center h-20 hover:bg-purple-900 transition-colors">
+                    <div class="text-xl font-bold text-gray-300">NOVA</div>
+                </div>
+                <div class="glass p-6 rounded-2xl flex items-center justify-center h-20 hover:bg-purple-900 transition-colors">
+                    <div class="text-xl font-bold text-gray-300">ELITE</div>
+                </div>
+                <div class="glass p-6 rounded-2xl flex items-center justify-center h-20 hover:bg-purple-900 transition-colors">
+                    <div class="text-xl font-bold text-gray-300">PREMIUM</div>
+                </div>
+                <div class="glass p-6 rounded-2xl flex items-center justify-center h-20 hover:bg-purple-900 transition-colors">
+                    <div class="text-xl font-bold text-gray-300">LUXE</div>
+                </div>
+                <div class="glass p-6 rounded-2xl flex items-center justify-center h-20 hover:bg-purple-900 transition-colors">
+                    <div class="text-xl font-bold text-gray-300">EXCLUSIVE</div>
+                </div>
+                <div class="glass p-6 rounded-2xl flex items-center justify-center h-20 hover:bg-purple-900 transition-colors">
+                    <div class="text-xl font-bold text-gray-300">ROYAL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-pink-900/40"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-white mb-6">هل أعجبك ما رأيت؟</h2>
+                <p class="text-xl mb-8 text-gray-300">اتصل بنا اليوم لمناقشة مشروعك القادم والاستفادة من خبراتنا</p>
+                <a href="contact.html" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all hover:scale-105 inline-flex items-center">
+                    <span>تواصل معنا</span>
+                    <i class="fas fa-arrow-left mr-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر الفاخر -->
+    <footer class="glass border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
+                        <div class="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                            <i class="fas fa-crown text-white text-sm"></i>
+                        </div>
+                        <div class="text-xl font-bold gradient-text">تِك نوفا</div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">شركة رائدة في تقديم حلول تقنية معلومات فاخرة وحصرية للعملاء المميزين.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">روابط سريعة</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-purple-400 transition-colors">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-purple-400 transition-colors">عن نوفا</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الخدمات الفاخرة</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-purple-400 transition-colors">إبداعاتنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">خدماتنا</h3>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">البنية التحتية السحابية</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الأمن السيبراني النخبوي</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الذكاء الاصطناعي الحصري</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الدعم الفاخر</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">اتصل بنا</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt ml-3 text-purple-400"></i>
+                            الرياض، المملكة العربية السعودية
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone ml-3 text-purple-400"></i>
+                            +966 12 345 6789
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope ml-3 text-purple-400"></i>
+                            elite@technova.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>© 2023 تِك نوفا. جميع الحقوق محفوظة. | تصميم حصري وفاخر</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // التحكم في القائمة المتنقلة
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            // تأثيرات التمرير
+            const fadeElements = document.querySelectorAll('.hover-lift');
+            
+            const appearOnScroll = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                element.style.opacity = 0;
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s, transform 0.6s';
+                appearOnScroll.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

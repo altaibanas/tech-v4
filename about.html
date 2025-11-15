@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن نوفا - تِك نوفا</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 to-purple-900 text-white font-almari">
+    <!-- شريط التنقل الفاخر -->
+    <nav class="glass fixed w-full z-50 py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2 space-x-reverse">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                    <i class="fas fa-crown text-white"></i>
+                </div>
+                <a href="index.html" class="text-2xl font-bold gradient-text">تِك نوفا</a>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 space-x-reverse">
+                <a href="index.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    الرئيسية
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="about.html" class="text-purple-300 font-medium relative group">
+                    عن نوفا
+                    <span class="absolute bottom-0 right-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500"></span>
+                </a>
+                <a href="services.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    الخدمات الفاخرة
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="portfolio.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    إبداعاتنا
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="contact.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    تواصل معنا
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all hover:scale-105">
+                    طلب خدمة فاخرة
+                </button>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div id="mobile-menu" class="md:hidden glass mt-4 py-4 px-4 rounded-xl hidden">
+            <a href="index.html" class="block py-3 text-white border-b border-gray-700">الرئيسية</a>
+            <a href="about.html" class="block py-3 text-purple-300 border-b border-gray-700">عن نوفا</a>
+            <a href="services.html" class="block py-3 text-white border-b border-gray-700">الخدمات الفاخرة</a>
+            <a href="portfolio.html" class="block py-3 text-white border-b border-gray-700">إبداعاتنا</a>
+            <a href="contact.html" class="block py-3 text-white">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <!-- قسم الهيدر -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <div class="absolute inset-0 grid-pattern"></div>
+        <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500 rounded-full filter blur-3xl opacity-10"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl opacity-10"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block glass px-4 py-2 rounded-full mb-6">
+                    <span class="text-sm font-medium text-purple-300">فخامة التقنية</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 text-shadow">
+                    <span class="gradient-text">قصة تِك نوفا</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    رحلة تميز بدأت قبل 5 سنوات، عندما قررنا إعادة تعريف مفهوم الخدمات التقنية. نحن لا نقدم حلولاً تقنية فحسب، بل نصنع تجارب فاخرة تلبي تطلعات العملاء المميزين.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم رؤيتنا ورسالتنا -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block glass px-4 py-2 rounded-full mb-6">
+                        <span class="text-sm font-medium text-purple-300">رؤيتنا</span>
+                    </div>
+                    <h2 class="text-4xl font-bold text-white mb-6">أن نكون الوجهة الأولى للتقنية الفاخرة</h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        نطمح لأن نكون الشريك التقني الحصري للشركات والمؤسسات التي تبحث عن التميز والتفرد. نحن لا نتنافس على السعر، بل نركز على تقديم قيمة استثنائية لا مثيل لها.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-gradient-to-r from-purple-500 to-pink-500 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-star text-white"></i>
+                            </div>
+                            <div class="mr-4">
+                                <h3 class="text-xl font-bold text-white mb-1">الريادة في الابتكار</h3>
+                                <p class="text-gray-400">نبتكر حلولاً تقنية تتجاوز التوقعات وتضع معايير جديدة للجودة.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-gradient-to-r from-blue-500 to-teal-500 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-crown text-white"></i>
+                            </div>
+                            <div class="mr-4">
+                                <h3 class="text-xl font-bold text-white mb-1">التفرد في التصميم</h3>
+                                <p class="text-gray-400">كل حل نقدمه مصمم خصيصًا ليعكس هوية عميلنا وتطلعاته.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="gradient-border rounded-2xl p-1">
+                        <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8">
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                                    <i class="fas fa-bullseye"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-white mb-4">رسالتنا</h3>
+                                <p class="text-gray-300 mb-6">
+                                    تقديم حلول تقنية استثنائية تجمع بين الابتكار والجودة والتفرد، لتمكين عملائنا من تحقيق أهدافهم بطريقة فاخرة وغير تقليدية.
+                                </p>
+                                <div class="flex justify-center space-x-6 space-x-reverse">
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-purple-400">5+</div>
+                                        <div class="text-gray-400 text-sm">سنوات تميز</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-pink-400">50+</div>
+                                        <div class="text-gray-400 text-sm">مشروع نخبوي</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- عناصر زخرفية -->
+                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full opacity-20 floating"></div>
+                    <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-gradient-to-r from-blue-500 to-teal-500 rounded-full opacity-20 floating" style="animation-delay: 1.5s;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم قيمنا -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-pink-900/20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-block glass px-4 py-2 rounded-full mb-4">
+                    <span class="text-sm font-medium text-purple-300">قيمنا الأساسية</span>
+                </div>
+                <h2 class="text-4xl font-bold text-white mb-6">المبادئ التي نؤمن بها</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">قيمنا هي الأساس الذي نبني عليه كل مشروع وعلاقة مع عملائنا</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- قيمة 1 -->
+                <div class="glass rounded-2xl p-8 text-center hover-lift group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">الجودة الاستثنائية</h3>
+                    <p class="text-gray-400">نلتزم بأعلى معايير الجودة في كل مشروع، مهما كانت التفاصيل. الجودة ليست خيارًا، بل هي أساس عملنا.</p>
+                </div>
+                
+                <!-- قيمة 2 -->
+                <div class="glass rounded-2xl p-8 text-center hover-lift group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">الابتكار الدائم</h3>
+                    <p class="text-gray-400">نبحث دائمًا عن أفكار جديدة وطرق مبتكرة لحل التحديات. الابتكار في DNA شركتنا.</p>
+                </div>
+                
+                <!-- قيمة 3 -->
+                <div class="glass rounded-2xl p-8 text-center hover-lift group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">الشفافية الكاملة</h3>
+                    <p class="text-gray-400">نعمل بشفافية مطلقة مع عملائنا. نشاركهم كل التفاصيل ونتائج العمل في كل مرحلة.</p>
+                </div>
+                
+                <!-- قيمة 4 -->
+                <div class="glass rounded-2xl p-8 text-center hover-lift group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">العمل الجماعي</h3>
+                    <p class="text-gray-400">نؤمن بقوة العمل الجماعي. فريقنا المتناغم هو سر نجاحنا في تقديم حلول استثنائية.</p>
+                </div>
+                
+                <!-- قيمة 5 -->
+                <div class="glass rounded-2xl p-8 text-center hover-lift group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">شغف التميز</h3>
+                    <p class="text-gray-400">نعمل بشغف وحب لما نفعله. هذا الشغف هو ما يدفعنا دائمًا لتقديم الأفضل.</p>
+                </div>
+                
+                <!-- قيمة 6 -->
+                <div class="glass rounded-2xl p-8 text-center hover-lift group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">التطوير المستمر</h3>
+                    <p class="text-gray-400">نتعلم ونتطور باستمرار. نواكب أحدث التقنيات والاتجاهات لنظل في المقدمة دائمًا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم فريقنا -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline-block glass px-4 py-2 rounded-full mb-4">
+                    <span class="text-sm font-medium text-purple-300">فريق النخبة</span>
+                </div>
+                <h2 class="text-4xl font-bold text-white mb-6">عقول مبدعة تقف وراء نجاحنا</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">فريقنا من الخبراء والمبدعين الذين يجمعون بين الموهبة والخبرة والالتزام بالتميز</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- عضو الفريق 1 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 text-center">
+                        <div class="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
+                            أ.ح
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">أحمد الحميد</h3>
+                        <p class="text-purple-400 font-medium mb-4">المدير التنفيذي</p>
+                        <p class="text-gray-400 text-sm mb-6">قائد رؤيوي بخبرة 15 عامًا في قيادة الشركات التقنية الناجحة.</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- عضو الفريق 2 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 text-center">
+                        <div class="w-24 h-24 bg-gradient-to-r from-blue-500 to-teal-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
+                            س.ع
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">سارة العتيبي</h3>
+                        <p class="text-blue-400 font-medium mb-4">مديرة الابتكار</p>
+                        <p class="text-gray-400 text-sm mb-6">خبيرة في الابتكار التقني وإدارة المشاريع المعقدة بخبرة 10 سنوات.</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- عضو الفريق 3 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 text-center">
+                        <div class="w-24 h-24 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
+                            م.ن
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">محمد الناصر</h3>
+                        <p class="text-green-400 font-medium mb-4">مهندس معماري سحابي</p>
+                        <p class="text-gray-400 text-sm mb-6">متخصص في تصميم البنى التحتية السحابية المعقدة بخبرة 8 سنوات.</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-green-400 transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-green-400 transition-colors">
+                                <i class="fab fa-aws"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- عضو الفريق 4 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 text-center">
+                        <div class="w-24 h-24 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
+                            ف.خ
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">فهد الخالد</h3>
+                        <p class="text-yellow-400 font-medium mb-4">خبير أمن سيبراني</p>
+                        <p class="text-gray-400 text-sm mb-6">متخصص في أمن المعلومات وحماية البيانات بخبرة 9 سنوات.</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                                <i class="fas fa-shield-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الجوائز والإنجازات -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-black to-purple-900/30"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-block glass px-4 py-2 rounded-full mb-4">
+                    <span class="text-sm font-medium text-purple-300">إنجازاتنا</span>
+                </div>
+                <h2 class="text-4xl font-bold text-white mb-6">جوائز وتقديرات نفتخر بها</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">شهادات تقدير وجوائز حصلنا عليها تقديرًا لجودة عملنا وتميزنا</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="glass rounded-2xl p-8 text-center hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">أفضل شركة تقنية ناشئة</h3>
+                    <p class="text-gray-400 text-sm">جائزة التميز التقني 2022</p>
+                </div>
+                
+                <div class="glass rounded-2xl p-8 text-center hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">جائزة الابتكار الرقمي</h3>
+                    <p class="text-gray-400 text-sm">منتدى التقنية العربي 2023</p>
+                </div>
+                
+                <div class="glass rounded-2xl p-8 text-center hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">شهادة الجودة العالمية</h3>
+                    <p class="text-gray-400 text-sm">ISO 9001:2015</p>
+                </div>
+                
+                <div class="glass rounded-2xl p-8 text-center hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">جائزة أفضل خدمة عملاء</h3>
+                    <p class="text-gray-400 text-sm">مجلة الأعمال الدولية 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-pink-900/40"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-white mb-6">هل تريد معرفة المزيد عنّا؟</h2>
+                <p class="text-xl mb-8 text-gray-300">تواصل معنا اليوم للتعرف على فريقنا وخبراتنا وكيف يمكننا مساعدتك في تحقيق أهدافك</p>
+                <a href="contact.html" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all hover:scale-105 inline-flex items-center">
+                    <span>تواصل معنا</span>
+                    <i class="fas fa-arrow-left mr-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر الفاخر -->
+    <footer class="glass border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
+                        <div class="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                            <i class="fas fa-crown text-white text-sm"></i>
+                        </div>
+                        <div class="text-xl font-bold gradient-text">تِك نوفا</div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">شركة رائدة في تقديم حلول تقنية معلومات فاخرة وحصرية للعملاء المميزين.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">روابط سريعة</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-purple-400 transition-colors">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-purple-400 transition-colors">عن نوفا</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الخدمات الفاخرة</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-purple-400 transition-colors">إبداعاتنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">خدماتنا</h3>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">البنية التحتية السحابية</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الأمن السيبراني النخبوي</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الذكاء الاصطناعي الحصري</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الدعم الفاخر</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">اتصل بنا</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt ml-3 text-purple-400"></i>
+                            الرياض، المملكة العربية السعودية
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone ml-3 text-purple-400"></i>
+                            +966 12 345 6789
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope ml-3 text-purple-400"></i>
+                            elite@technova.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>© 2023 تِك نوفا. جميع الحقوق محفوظة. | تصميم حصري وفاخر</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // التحكم في القائمة المتنقلة
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            // تأثيرات التمرير
+            const fadeElements = document.querySelectorAll('.hover-lift');
+            
+            const appearOnScroll = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                element.style.opacity = 0;
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s, transform 0.6s';
+                appearOnScroll.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

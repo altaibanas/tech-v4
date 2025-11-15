@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة - تيك برو</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet"> -->
+    <style>
+       
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .article-content {
+            line-height: 1.8;
+        }
+        .article-content h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        .article-content p {
+            margin-bottom: 1rem;
+        }
+        .article-content ul {
+            list-style-type: disc;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .article-content ol {
+            list-style-type: decimal;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <a href="index.html" class="flex items-center">
+                            <i class="fas fa-code text-blue-600 text-2xl mr-2"></i>
+                            <span class="font-bold text-gray-800 text-xl">تيك برو</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">الرئيسية</a>
+                    <a href="services.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">الخدمات</a>
+                    <a href="portfolio.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">معرض الأعمال</a>
+                    <a href="shop.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">المتجر</a>
+                    <a href="blog.html" class="py-4 px-2 text-blue-600 font-semibold border-b-4 border-blue-600">المدونة</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">من نحن</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">اتصل بنا</a>
+                </div>
+                
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">الرئيسية</a></li>
+                <li><a href="services.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">الخدمات</a></li>
+                <li><a href="portfolio.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">معرض الأعمال</a></li>
+                <li><a href="shop.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">المتجر</a></li>
+                <li class="active"><a href="blog.html" class="block text-sm px-2 py-4 bg-blue-600 text-white">المدونة</a></li>
+                <li><a href="about.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">من نحن</a></li>
+                <li><a href="contact.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">مدونة <span class="text-yellow-300">تيك برو</span></h1>
+                <p class="text-xl max-w-2xl mx-auto">استكشف أحدث المقالات والنصائح في عالم التصميم والتطوير والتقنية</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المقالات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- المقالات الرئيسية -->
+                <div class="lg:col-span-2">
+                    <!-- مقال مميز -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-12 blog-card">
+                        <div class="h-64 bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center">
+                            <i class="fas fa-star text-white text-6xl"></i>
+                        </div>
+                        <div class="p-8">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full">تصميم الويب</span>
+                                <span class="text-gray-500 text-sm mr-4"><i class="far fa-clock mr-1"></i> 15 مايو 2023</span>
+                            </div>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4">أحدث اتجاهات تصميم الويب في 2023</h2>
+                            <p class="text-gray-600 mb-6">استكشف أحدث الاتجاهات في تصميم واجهات المستخدم وتجربة المستخدم التي ستشكل مستقبل الويب في العام الحالي. من التصميم الشبه شفاف إلى الواقع المعزز، تعرف على ما يجب أن تضعه في اعتبارك لمشاريعك القادمة.</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-user text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">أحمد محمد</h4>
+                                        <p class="text-gray-500 text-sm">مصمم واجهات مستخدم</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-blue-600 font-semibold flex items-center">
+                                    اقرأ المزيد
+                                    <i class="fas fa-arrow-left mr-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- قائمة المقالات -->
+                    <h2 class="text-2xl font-bold text-gray-800 mb-8">أحدث المقالات</h2>
+                    <div class="space-y-8">
+                        <!-- مقال 1 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden blog-card">
+                            <div class="md:flex">
+                                <div class="md:w-1/3">
+                                    <div class="h-48 bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center">
+                                        <i class="fas fa-mobile-alt text-white text-4xl"></i>
+                                    </div>
+                                </div>
+                                <div class="md:w-2/3 p-6">
+                                    <div class="flex items-center mb-4">
+                                        <span class="bg-green-100 text-green-600 text-sm font-semibold px-3 py-1 rounded-full">تطوير الجوال</span>
+                                        <span class="text-gray-500 text-sm mr-4"><i class="far fa-clock mr-1"></i> 10 مايو 2023</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-4">كيف تختار بين التطبيقات الأصلية والهجينة</h3>
+                                    <p class="text-gray-600 mb-4">دليل مفصل لمساعدتك في اتخاذ القرار الصحيح بين تطوير تطبيقات أصلية أو هجينة لمشروعك القادم، مع مقارنة شاملة للمزايا والعيوب.</p>
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center">
+                                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-2">
+                                                <i class="fas fa-user text-green-600 text-sm"></i>
+                                            </div>
+                                            <span class="text-gray-600 text-sm">فاطمة علي</span>
+                                        </div>
+                                        <a href="#" class="text-green-600 font-semibold text-sm flex items-center">
+                                            اقرأ المزيد
+                                            <i class="fas fa-arrow-left mr-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- مقال 2 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden blog-card">
+                            <div class="md:flex">
+                                <div class="md:w-1/3">
+                                    <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center">
+                                        <i class="fas fa-search text-white text-4xl"></i>
+                                    </div>
+                                </div>
+                                <div class="md:w-2/3 p-6">
+                                    <div class="flex items-center mb-4">
+                                        <span class="bg-purple-100 text-purple-600 text-sm font-semibold px-3 py-1 rounded-full">تحسين محركات البحث</span>
+                                        <span class="text-gray-500 text-sm mr-4"><i class="far fa-clock mr-1"></i> 5 مايو 2023</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-4">أفضل استراتيجيات SEO لمواقع التجارة الإلكترونية</h3>
+                                    <p class="text-gray-600 mb-4">اكتشف أحدث التقنيات والاستراتيجيات لتحسين ظهور متجرك الإلكتروني في نتائج محركات البحث وزيادة المبيعات بشكل ملحوظ.</p>
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center">
+                                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-2">
+                                                <i class="fas fa-user text-purple-600 text-sm"></i>
+                                            </div>
+                                            <span class="text-gray-600 text-sm">خالد إبراهيم</span>
+                                        </div>
+                                        <a href="#" class="text-purple-600 font-semibold text-sm flex items-center">
+                                            اقرأ المزيد
+                                            <i class="fas fa-arrow-left mr-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- مقال 3 -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden blog-card">
+                            <div class="md:flex">
+                                <div class="md:w-1/3">
+                                    <div class="h-48 bg-gradient-to-r from-yellow-400 to-orange-500 flex items-center justify-center">
+                                        <i class="fas fa-tools text-white text-4xl"></i>
+                                    </div>
+                                </div>
+                                <div class="md:w-2/3 p-6">
+                                    <div class="flex items-center mb-4">
+                                        <span class="bg-yellow-100 text-yellow-600 text-sm font-semibold px-3 py-1 rounded-full">أدوات التطوير</span>
+                                        <span class="text-gray-500 text-sm mr-4"><i class="far fa-clock mr-1"></i> 1 مايو 2023</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-4">أفضل أدوات التطوير التي يحتاجها كل مبرمج في 2023</h3>
+                                    <p class="text-gray-600 mb-4">تعرف على أحدث الأدوات والمكتبات التي يمكن أن تعزز إنتاجيتك كمبرمج وتسهل عملية التطوير في العام الحالي.</p>
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center">
+                                            <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-2">
+                                                <i class="fas fa-user text-yellow-600 text-sm"></i>
+                                            </div>
+                                            <span class="text-gray-600 text-sm">سارة عبدالله</span>
+                                        </div>
+                                        <a href="#" class="text-yellow-600 font-semibold text-sm flex items-center">
+                                            اقرأ المزيد
+                                            <i class="fas fa-arrow-left mr-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ترقيم الصفحات -->
+                    <div class="flex justify-center mt-12">
+                        <nav class="flex items-center space-x-2">
+                            <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-lg">1</a>
+                            <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">2</a>
+                            <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">3</a>
+                            <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300">التالي</a>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- الشريط الجانبي -->
+                <div class="lg:col-span-1">
+                    <!-- بحث -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">ابحث في المدونة</h3>
+                        <div class="flex">
+                            <input type="text" placeholder="اكتب كلمة البحث..." class="w-full px-4 py-2 border border-gray-300 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-l-lg hover:bg-blue-700 transition duration-300">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- الفئات -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">الفئات</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" class="flex justify-between text-gray-600 hover:text-blue-600 transition duration-300">
+                                    <span>تصميم الويب</span>
+                                    <span class="bg-blue-100 text-blue-600 text-xs font-semibold px-2 py-1 rounded-full">12</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex justify-between text-gray-600 hover:text-blue-600 transition duration-300">
+                                    <span>تطوير الويب</span>
+                                    <span class="bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded-full">8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex justify-between text-gray-600 hover:text-blue-600 transition duration-300">
+                                    <span>تحسين محركات البحث</span>
+                                    <span class="bg-purple-100 text-purple-600 text-xs font-semibold px-2 py-1 rounded-full">5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex justify-between text-gray-600 hover:text-blue-600 transition duration-300">
+                                    <span>تطبيقات الجوال</span>
+                                    <span class="bg-yellow-100 text-yellow-600 text-xs font-semibold px-2 py-1 rounded-full">7</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex justify-between text-gray-600 hover:text-blue-600 transition duration-300">
+                                    <span>أدوات التطوير</span>
+                                    <span class="bg-red-100 text-red-600 text-xs font-semibold px-2 py-1 rounded-full">4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- المقالات الشائعة -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">مقالات شائعة</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-star text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">كيف تزيد سرعة موقعك</h4>
+                                    <p class="text-gray-500 text-sm">15 أبريل 2023</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-shield-alt text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">أفضل ممارسات أمان الويب</h4>
+                                    <p class="text-gray-500 text-sm">10 أبريل 2023</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-line text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">تحليل أداء مواقع الويب</h4>
+                                    <p class="text-gray-500 text-sm">5 أبريل 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- النشرة البريدية -->
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-lg p-6 text-white">
+                        <h3 class="text-xl font-bold mb-4">اشترك في النشرة البريدية</h3>
+                        <p class="mb-4 text-blue-100">احصل على أحدث المقالات والنصائح مباشرة إلى بريدك الإلكتروني</p>
+                        <form class="space-y-4">
+                            <input type="email" placeholder="بريدك الإلكتروني" class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-white">
+                            <button type="submit" class="w-full bg-white text-blue-600 py-2 rounded-lg font-bold hover:bg-gray-100 transition duration-300">اشترك الآن</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-2/3 mb-8 md:mb-0 md:pr-8">
+                        <h2 class="text-3xl font-bold mb-4">هل لديك موضوع تود أن نكتب عنه؟</h2>
+                        <p class="text-blue-100 mb-6">اتصل بنا واقترح موضوعًا لمقالة جديدة، أو اطلب استشارة في مجال التصميم والتطوير</p>
+                    </div>
+                    <div class="md:w-1/3 text-center md:text-left">
+                        <a href="contact.html" class="bg-white text-blue-600 hover:bg-gray-100 py-3 px-8 rounded-lg font-bold text-lg transition duration-300 inline-block">اتصل بنا الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-blue-400 text-2xl mr-2"></i>
+                        <span class="font-bold text-xl">تيك برو</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">نحو عالم رقمي متميز نقدم حلولاً تقنية متكاملة لتصميم وتطوير وإصلاح وتحسين مواقع الويب.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">الخدمات</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">معرض الأعمال</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">المدونة</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">تصميم الويب</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">تطوير الويب</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">إصلاح المواقع</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">تحسين SEO</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">استضافة الويب</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">اتصل بنا</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-blue-400"></i>
+                            <span>المملكة العربية السعودية، الرياض</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-blue-400"></i>
+                            <span>+966 123 456 789</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                            <span>info@techpro.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
+                <p>© 2023 تيك برو. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // جافاسكريبت لقائمة الجوال
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>

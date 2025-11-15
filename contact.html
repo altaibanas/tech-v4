@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - تِك نوفا</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 to-purple-900 text-white font-almari">
+    <!-- شريط التنقل الفاخر -->
+    <nav class="glass fixed w-full z-50 py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2 space-x-reverse">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                    <i class="fas fa-crown text-white"></i>
+                </div>
+                <a href="index.html" class="text-2xl font-bold gradient-text">تِك نوفا</a>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 space-x-reverse">
+                <a href="index.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    الرئيسية
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="about.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    عن نوفا
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="services.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    الخدمات الفاخرة
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="portfolio.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    إبداعاتنا
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="contact.html" class="text-purple-300 font-medium relative group">
+                    تواصل معنا
+                    <span class="absolute bottom-0 right-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500"></span>
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all hover:scale-105">
+                    طلب خدمة فاخرة
+                </button>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div id="mobile-menu" class="md:hidden glass mt-4 py-4 px-4 rounded-xl hidden">
+            <a href="index.html" class="block py-3 text-white border-b border-gray-700">الرئيسية</a>
+            <a href="about.html" class="block py-3 text-white border-b border-gray-700">عن نوفا</a>
+            <a href="services.html" class="block py-3 text-white border-b border-gray-700">الخدمات الفاخرة</a>
+            <a href="portfolio.html" class="block py-3 text-white border-b border-gray-700">إبداعاتنا</a>
+            <a href="contact.html" class="block py-3 text-purple-300">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <!-- قسم الهيدر -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <div class="absolute inset-0 grid-pattern"></div>
+        <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500 rounded-full filter blur-3xl opacity-10"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl opacity-10"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block glass px-4 py-2 rounded-full mb-6">
+                    <span class="text-sm font-medium text-purple-300">اتصل بنا</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 text-shadow">
+                    <span class="gradient-text">تواصل معنا</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    نحن هنا لمساعدتك في رحلتك نحو التحول الرقمي الفاخر. تواصل معنا اليوم لمناقشة مشروعك والاستفادة من استشارتنا المجانية.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معلومات الاتصال -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="glass rounded-2xl p-8 text-center hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">عنواننا</h3>
+                    <p class="text-gray-400">الرياض، المملكة العربية السعودية</p>
+                    <p class="text-gray-500 text-sm mt-2">حي السفارات، شارع الملك فهد</p>
+                </div>
+                
+                <div class="glass rounded-2xl p-8 text-center hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">هاتفنا</h3>
+                    <p class="text-gray-400">+966 12 345 6789</p>
+                    <p class="text-gray-500 text-sm mt-2">الأحد - الخميس 8:00 ص - 5:00 م</p>
+                </div>
+                
+                <div class="glass rounded-2xl p-8 text-center hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">بريدنا الإلكتروني</h3>
+                    <p class="text-gray-400">elite@technova.com</p>
+                    <p class="text-gray-500 text-sm mt-2">نرد على جميع الاستفسارات خلال 24 ساعة</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- نموذج الاتصال -->
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">أرسل لنا رسالة</h2>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-300 font-medium mb-2">الاسم الكامل *</label>
+                                <input type="text" id="name" class="w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all" placeholder="أدخل اسمك الكامل" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-300 font-medium mb-2">البريد الإلكتروني *</label>
+                                <input type="email" id="email" class="w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all" placeholder="أدخل بريدك الإلكتروني" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-gray-300 font-medium mb-2">الشركة</label>
+                            <input type="text" id="company" class="w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all" placeholder="اسم شركتك (اختياري)">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-gray-300 font-medium mb-2">نوع الخدمة المطلوبة</label>
+                            <select id="service" class="w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
+                                <option value="">اختر الخدمة المطلوبة</option>
+                                <option value="cloud">البنية التحتية السحابية</option>
+                                <option value="security">الأمن السيبراني النخبوي</option>
+                                <option value="ai">الذكاء الاصطناعي الحصري</option>
+                                <option value="consultation">استشارة تقنية</option>
+                                <option value="other">خدمة أخرى</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-300 font-medium mb-2">الرسالة *</label>
+                            <textarea id="message" rows="6" class="w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all" placeholder="اكتب رسالتك هنا..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 rounded-xl font-bold hover:shadow-lg transition-all hover:scale-105">
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- معلومات إضافية -->
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">معلومات إضافية</h2>
+                    
+                    <div class="glass rounded-2xl p-8 mb-8">
+                        <h3 class="text-xl font-bold text-white mb-4">ساعات العمل</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex justify-between items-center py-2 border-b border-gray-700">
+                                <span class="font-medium">الأحد - الخميس</span>
+                                <span class="bg-purple-900 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">8:00 ص - 5:00 م</span>
+                            </li>
+                            <li class="flex justify-between items-center py-2 border-b border-gray-700">
+                                <span class="font-medium">الجمعة</span>
+                                <span class="bg-gray-800 text-gray-400 px-3 py-1 rounded-full text-sm font-bold">مغلق</span>
+                            </li>
+                            <li class="flex justify-between items-center py-2">
+                                <span class="font-medium">السبت</span>
+                                <span class="bg-purple-900 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">10:00 ص - 2:00 م</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glass rounded-2xl p-8 mb-8">
+                        <h3 class="text-xl font-bold text-white mb-4">الرد على الاستفسارات</h3>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            نحن نحرص على الرد على جميع استفساراتكم في غضون 24 ساعة خلال أيام العمل. للاستفسارات العاجلة، يرجى الاتصال بنا مباشرة على الرقم المذكور أعلاه.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://wa.me/966123456789" class="bg-green-600 text-white px-4 py-3 rounded-xl font-medium hover:bg-green-700 transition-colors flex items-center">
+                                <i class="fab fa-whatsapp ml-2"></i>
+                                واتساب
+                            </a>
+                            <a href="tel:+966123456789" class="bg-blue-600 text-white px-4 py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors flex items-center">
+                                <i class="fas fa-phone ml-2"></i>
+                                اتصل بنا
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- فريق المبيعات -->
+                    <div class="glass rounded-2xl p-8">
+                        <h3 class="text-xl font-bold text-white mb-4">فريق المبيعات</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold ml-4">
+                                    أ.ح
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white">أحمد الحميد</h4>
+                                    <p class="text-gray-400 text-sm">مدير المبيعات</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold ml-4">
+                                    س.ع
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white">سارة العتيبي</h4>
+                                    <p class="text-gray-400 text-sm">مسؤولة استشارات</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخريطة -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-black to-purple-900/30"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-3xl font-bold text-white mb-8 text-center">موقعنا على الخريطة</h2>
+            <div class="glass rounded-2xl overflow-hidden">
+                <div class="h-96 bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white text-xl">
+                    <!-- هنا يمكن إضافة خريطة جوجل أو أي خدمة خرائط أخرى -->
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt text-6xl mb-4"></i>
+                        <p>خريطة موقعنا</p>
+                        <p class="text-lg mt-2">الرياض، المملكة العربية السعودية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-6">أسئلة شائعة</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">إجابات على الأسئلة الأكثر شيوعًا من عملائنا</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="glass rounded-2xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-3">كم تستغرق عملية الرد على الاستفسارات؟</h3>
+                    <p class="text-gray-300">نرد على جميع الاستفسارات خلال 24 ساعة في أيام العمل. للاستفسارات العاجلة، يمكنكم الاتصال بنا مباشرة على الرقم المذكور أعلاه.</p>
+                </div>
+                
+                <div class="glass rounded-2xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-3">هل تقدمون استشارات مجانية؟</h3>
+                    <p class="text-gray-300">نعم، نقدم استشارة تقنية مجانية أولية لجميع العملاء الجدد. خلال هذه الاستشارة، نناقش احتياجاتكم ونقدم توصيات أولية.</p>
+                </div>
+                
+                <div class="glass rounded-2xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-3">ما هي مدة تنفيذ المشاريع؟</h3>
+                    <p class="text-gray-300">تختلف مدة التنفيذ حسب نوع المشروع وتعقيده. بشكل عام، تتراوح المدة بين 4 أسابيع للمشاريع الصغيرة إلى 6 أشهر للمشاريع الكبيرة والمعقدة.</p>
+                </div>
+                
+                <div class="glass rounded-2xl p-6">
+                    <h3 class="text-xl font-bold text-white mb-3">هل تقدمون دعمًا بعد انتهاء المشروع؟</h3>
+                    <p class="text-gray-300">نعم، نقدم باقات دعم فني شاملة بعد انتهاء المشروع. تشمل هذه الباقات المراقبة المستمرة، الصيانة الوقائية، التحديثات الأمنية، والدعم الفني.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-pink-900/40"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-white mb-6">هل أنت مستعد لبدء مشروعك؟</h2>
+                <p class="text-xl mb-8 text-gray-300">اتصل بنا اليوم للحصول على استشارة مجانية وتقديم عرض سعر لمشروعك</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="tel:+966123456789" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all hover:scale-105 inline-flex items-center">
+                        <i class="fas fa-phone mr-2"></i>
+                        <span>اتصل بنا</span>
+                    </a>
+                    <a href="mailto:elite@technova.com" class="glass text-white border border-purple-500 px-8 py-4 rounded-xl font-bold text-lg hover:bg-purple-900 transition-all inline-flex items-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span>أرسل بريداً</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر الفاخر -->
+    <footer class="glass border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
+                        <div class="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                            <i class="fas fa-crown text-white text-sm"></i>
+                        </div>
+                        <div class="text-xl font-bold gradient-text">تِك نوفا</div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">شركة رائدة في تقديم حلول تقنية معلومات فاخرة وحصرية للعملاء المميزين.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">روابط سريعة</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-purple-400 transition-colors">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-purple-400 transition-colors">عن نوفا</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الخدمات الفاخرة</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-purple-400 transition-colors">إبداعاتنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">خدماتنا</h3>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">البنية التحتية السحابية</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الأمن السيبراني النخبوي</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الذكاء الاصطناعي الحصري</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الدعم الفاخر</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">اتصل بنا</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt ml-3 text-purple-400"></i>
+                            الرياض، المملكة العربية السعودية
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone ml-3 text-purple-400"></i>
+                            +966 12 345 6789
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope ml-3 text-purple-400"></i>
+                            elite@technova.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>© 2023 تِك نوفا. جميع الحقوق محفوظة. | تصميم حصري وفاخر</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // التحكم في القائمة المتنقلة
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            // تأثيرات التمرير
+            const fadeElements = document.querySelectorAll('.hover-lift');
+            
+            const appearOnScroll = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                element.style.opacity = 0;
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s, transform 0.6s';
+                appearOnScroll.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
